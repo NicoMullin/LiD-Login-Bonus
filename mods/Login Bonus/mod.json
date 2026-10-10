@@ -1,0 +1,93 @@
+{
+  "id": "Login Bonus",
+  "name": "Login Bonus",
+  "description": "Chooses what the daily login bonus draws from: the online game's rewards for your floor, or your own lists, with each reward as likely as you make it. The bonus itself is handed out by lid-loginbonus.dll (LiD Login Bonus) - see the readme. Set it in Configuration.",
+  "version": "0.1.0",
+  "author": "KSFA",
+  "category": "Game content",
+  "tags": [
+    "login-bonus",
+    "rewards",
+    "daily",
+    "rewards-box",
+    "express-pass"
+  ],
+  "game_version": [
+    "5.0.4.1.0 - 1.89",
+    "5.0.4.1.0 - 1.89 (Steam 5.0.4.2.0)",
+    "5.0.4.4.0 - 1.91"
+  ],
+  "min_manager_version": "0.12.5",
+  "requires": [],
+  "conflicts_with": [],
+  "settings": [
+    {
+      "id": "mode",
+      "label": "Bonus lists",
+      "type": "choice",
+      "default": "online",
+      "options": [
+        {
+          "value": "online",
+          "label": "As online",
+          "help": "Every reward the online game's login calendar gave at your floor tier that arrives as one present, each as likely as the others. The same as the plugin without this mod."
+        },
+        {
+          "value": "custom",
+          "label": "Your own lists",
+          "help": "Only the rewards on your three lists under \"Your own lists\", each as often as its weight says."
+        }
+      ]
+    },
+    {
+      "id": "list_1",
+      "label": "1-20F",
+      "type": "rewards",
+      "noun": "reward",
+      "group": "Your own lists",
+      "default_label": "The online 1-20F list, to change",
+      "help": "Until the 21F elevator stop is open. Starts as the online list: 65 rewards, all weight 1.",
+      "default": "RWD_1VIP_1/1,RWD_1VIP_3/1,RWD_1VIP_4/1,RWD_1VIP_5/1,RWD_2ANV_01_017/1,RWD_2ANV_01_018/1,RWD_2ANV_01_047/1,RWD_2ANV_01_0481/1,RWD_2ANV_01_0491/1,RWD_3ANV_01_0482/1,RWD_3ANV_01_0492/1,RWD_4ANV_41_048/1,RWD_4ANV_41_049/1,RWD_5ANV_41_048/1,RWD_5ANV_41_049/1,RWD_6ANV_41_048/1,RWD_6ANV_41_049/1,RWD_7ANV_41_048/1,RWD_7ANV_41_049/1,RWD_8ANV_41_048/1,RWD_8ANV_41_049/1,RWD_ITEM_MAT_001/1,RWD_ITEM_MAT_011/1,RWD_ITEM_MAT_021/1,RWD_ITEM_MAT_051/1,RWD_ITEM_MAT_061/1,RWD_ITEM_MAT_071/1,RWD_ITEM_MAT_101/1,RWD_ITEM_MAT_111/1,RWD_ITEM_MAT_121/1,RWD_ITEM_MAT_151/1,RWD_ITEM_MAT_161/1,RWD_ITEM_MAT_171/1,RWD_ITEM_MAT_201/1,RWD_ITEM_MAT_211/1,RWD_ITEM_MAT_221/1,RWD_ITEM_MAT_251/1,RWD_ITEM_MAT_261/1,RWD_ITEM_MAT_271/1,RWD_ITEM_MAT_301/1,RWD_ITEM_MAT_311/1,RWD_ITEM_MAT_341/1,RWD_ITEM_MAT_351/1,RWD_ITEM_MAT_381/1,RWD_ITEM_MAT_391/1,RWD_ITEM_MAT_421/1,RWD_ITEM_MAT_431/1,RWD_ITEM_USE_01/1,RWD_ITEM_USE_31/1,RWD_LOSTBAG_001/1,RWD_LOSTBAG_002/1,RWD_MEDAL_2/1,RWD_MEDAL_3/1,RWD_MEDAL_6/1,RWD_MEDAL_7/1,RWD_MONEY_3000/1,RWD_MUSHROOM_001/1,RWD_MUSHROOM_011/1,RWD_MUSHROOM_031/1,RWD_MUSHROOM_041/1,RWD_MUSHROOM_051/1,RWD_MUSHROOM_061/1,RWD_SPIRIT_1000/1,RWD_SPIRIT_10000/1,RWD_SPIRIT_4000/1"
+    },
+    {
+      "id": "list_21",
+      "label": "21-40F",
+      "type": "rewards",
+      "noun": "reward",
+      "group": "Your own lists",
+      "default_label": "The online 21-40F list, to change",
+      "help": "Once the 21F or 31F elevator stop is open. Starts as the online list: 64 rewards, all weight 1.",
+      "default": "RWD_1VIP_1/1,RWD_1VIP_3/1,RWD_1VIP_4/1,RWD_1VIP_5/1,RWD_2ANV_21_017/1,RWD_2ANV_21_018/1,RWD_2ANV_21_047/1,RWD_2ANV_21_0481/1,RWD_2ANV_21_0491/1,RWD_3ANV_21_0482/1,RWD_3ANV_21_0492/1,RWD_4ANV_41_048/1,RWD_4ANV_41_049/1,RWD_5ANV_41_048/1,RWD_5ANV_41_049/1,RWD_6ANV_41_048/1,RWD_6ANV_41_049/1,RWD_7ANV_41_048/1,RWD_7ANV_41_049/1,RWD_8ANV_41_048/1,RWD_8ANV_41_049/1,RWD_ITEM_MAT_021/1,RWD_ITEM_MAT_031/1,RWD_ITEM_MAT_041/1,RWD_ITEM_MAT_071/1,RWD_ITEM_MAT_081/1,RWD_ITEM_MAT_091/1,RWD_ITEM_MAT_121/1,RWD_ITEM_MAT_131/1,RWD_ITEM_MAT_141/1,RWD_ITEM_MAT_171/1,RWD_ITEM_MAT_181/1,RWD_ITEM_MAT_191/1,RWD_ITEM_MAT_221/1,RWD_ITEM_MAT_231/1,RWD_ITEM_MAT_241/1,RWD_ITEM_MAT_271/1,RWD_ITEM_MAT_281/1,RWD_ITEM_MAT_291/1,RWD_ITEM_MAT_321/1,RWD_ITEM_MAT_331/1,RWD_ITEM_MAT_361/1,RWD_ITEM_MAT_371/1,RWD_ITEM_MAT_401/1,RWD_ITEM_MAT_411/1,RWD_ITEM_MAT_441/1,RWD_ITEM_MAT_451/1,RWD_ITEM_USE_11/1,RWD_ITEM_USE_31/1,RWD_LOSTBAG_002/1,RWD_LOSTBAG_003/1,RWD_MEDAL_2/1,RWD_MEDAL_3/1,RWD_MEDAL_4/1,RWD_MEDAL_6/1,RWD_MEDAL_7/1,RWD_MUSHROOM_031/1,RWD_MUSHROOM_041/1,RWD_MUSHROOM_071/1,RWD_MUSHROOM_131/1,RWD_MUSHROOM_141/1,RWD_MUSHROOM_181/1,RWD_SPIRIT_12000/1,RWD_SPIRIT_3000/1"
+    },
+    {
+      "id": "list_41",
+      "label": "41F and up",
+      "type": "rewards",
+      "noun": "reward",
+      "group": "Your own lists",
+      "default_label": "The online 41F and up list, to change",
+      "help": "Once the 41F or 51F elevator stop is open. Starts as the online list: 62 rewards, all weight 1.",
+      "default": "RWD_1VIP_1/1,RWD_1VIP_3/1,RWD_1VIP_4/1,RWD_1VIP_5/1,RWD_2ANV_41_017/1,RWD_2ANV_41_018/1,RWD_2ANV_41_047/1,RWD_3ANV_41_048/1,RWD_3ANV_41_049/1,RWD_4ANV_41_048/1,RWD_4ANV_41_049/1,RWD_5ANV_41_048/1,RWD_5ANV_41_049/1,RWD_6ANV_41_048/1,RWD_6ANV_41_049/1,RWD_7ANV_41_048/1,RWD_7ANV_41_049/1,RWD_8ANV_41_048/1,RWD_8ANV_41_049/1,RWD_ITEM_MAT_041/1,RWD_ITEM_MAT_091/1,RWD_ITEM_MAT_141/1,RWD_ITEM_MAT_191/1,RWD_ITEM_MAT_241/1,RWD_ITEM_MAT_291/1,RWD_ITEM_MAT_331/1,RWD_ITEM_MAT_371/1,RWD_ITEM_MAT_411/1,RWD_ITEM_MAT_451/1,RWD_ITEM_MAT_551/1,RWD_ITEM_MAT_561/1,RWD_ITEM_MAT_571/1,RWD_ITEM_MAT_581/1,RWD_ITEM_MAT_591/1,RWD_ITEM_MAT_601/1,RWD_ITEM_MAT_611/1,RWD_ITEM_MAT_621/1,RWD_ITEM_MAT_631/1,RWD_ITEM_MAT_641/1,RWD_ITEM_MAT_651/1,RWD_ITEM_MAT_661/1,RWD_ITEM_MAT_671/1,RWD_ITEM_MAT_681/1,RWD_ITEM_USE_11/1,RWD_ITEM_USE_31/1,RWD_LOSTBAG_003/1,RWD_LOSTBAG_006/1,RWD_MEDAL_2/1,RWD_MEDAL_3/1,RWD_MEDAL_4/1,RWD_MEDAL_6/1,RWD_MEDAL_7/1,RWD_MONEY_200000/1,RWD_MUSHROOM_031/1,RWD_MUSHROOM_041/1,RWD_MUSHROOM_071/1,RWD_MUSHROOM_131/1,RWD_MUSHROOM_141/1,RWD_MUSHROOM_181/1,RWD_SPIRIT_200000/1,RWD_SPIRIT_36000/1,RWD_SPIRIT_6000/1"
+    }
+  ],
+  "patches": [
+    {
+      "type": "raw_sql",
+      "id": "online-lists",
+      "when": {
+        "mode": "online"
+      },
+      "description": "The online game's rewards (no lists of the mod's own)",
+      "sql": "DELETE FROM master_login_bonus WHERE cond_type IN ('LID_RANDOM', 'LID_RANDOM_O21', 'LID_RANDOM_O41');"
+    },
+    {
+      "type": "raw_sql",
+      "id": "own-lists",
+      "when": {
+        "mode": "custom"
+      },
+      "description": "Your own reward lists for the daily login bonus",
+      "sql": "DELETE FROM master_login_bonus WHERE cond_type IN ('LID_RANDOM', 'LID_RANDOM_O21', 'LID_RANDOM_O41');\nWITH wanted(rwdid, weight) AS (VALUES {{list_1}}) INSERT INTO master_login_bonus (cond_type, cond_date, cond_days, rwdid, fromval) SELECT 'LID_RANDOM', '0000-00-00', weight, rwdid, '' FROM wanted WHERE rwdid IN (SELECT rwdid FROM master_reward);\nWITH wanted(rwdid, weight) AS (VALUES {{list_21}}) INSERT INTO master_login_bonus (cond_type, cond_date, cond_days, rwdid, fromval) SELECT 'LID_RANDOM_O21', '0000-00-00', weight, rwdid, '' FROM wanted WHERE rwdid IN (SELECT rwdid FROM master_reward);\nWITH wanted(rwdid, weight) AS (VALUES {{list_41}}) INSERT INTO master_login_bonus (cond_type, cond_date, cond_days, rwdid, fromval) SELECT 'LID_RANDOM_O41', '0000-00-00', weight, rwdid, '' FROM wanted WHERE rwdid IN (SELECT rwdid FROM master_reward);"
+    }
+  ]
+}
