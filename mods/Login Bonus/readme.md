@@ -41,3 +41,12 @@ itself reads none of that table offline, so nothing else changes. Switching
 the mod off removes them.
 
 Needs LET IT DIE DB Mod Manager 0.12.5 or newer.
+
+## Switched with this mod
+
+From LiD DB Editor 0.12.8, saving with this mod ticked switches
+`lid-loginbonus.dll` on, and saving with it unticked switches it off: renamed
+to `.dll.off`, which the Plugin Loader skips. Nothing is deleted, and ticking
+the mod again brings it back. Close the game first. The plugin used to run on
+its own too, drawing from the online rewards; now tick this mod to keep it on
+(its default, Online rewards, is the same as the plugin alone).

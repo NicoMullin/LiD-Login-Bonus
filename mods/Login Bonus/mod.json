@@ -2,7 +2,7 @@
   "id": "Login Bonus",
   "name": "Login Bonus",
   "description": "Chooses what the daily login bonus draws from: the online game's rewards for your floor, or your own lists, with each reward as likely as you make it. The bonus itself is handed out by lid-loginbonus.dll (LiD Login Bonus) - see the readme. Set it in Configuration.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "KSFA",
   "category": "Game content",
   "tags": [
@@ -20,6 +20,7 @@
   "min_manager_version": "0.12.5",
   "requires": [],
   "conflicts_with": [],
+  "plugin": "lid-loginbonus.dll",
   "settings": [
     {
       "id": "mode",
